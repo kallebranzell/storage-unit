@@ -7,3 +7,34 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
 }
+
+ul, li, a {
+  font-size: 3.5vw; /* tweak to taste */
+  line-height: 1.6;
+}
+
+/* Bigger text on mobile */
+@media (max-width: 600px) {
+  ul, li, a {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
+
+.container, a:link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2vw;
+}
+
+h1, a:link, p, ul, li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
